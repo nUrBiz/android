@@ -85,6 +85,8 @@ C) INSTALL RECOVERY: (utility ROM necessary to proceed, some function ex: file e
 adb reboot bootloader
 ```
 
+THAN
+
 - secure to handshake host-device than flash recovery from bootloader/fastboot:
 
 ```
@@ -148,8 +150,9 @@ D.2 locally on device trough recovery, push the desired file to device trough:
 adb push ###.zip
 ```
 
-- than on recovery select install from zip
+THAN
 
+- than on recovery select install from zip
 - reboot after install:
 
 ```
