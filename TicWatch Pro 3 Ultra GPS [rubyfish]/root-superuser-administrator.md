@@ -1,15 +1,15 @@
 # STEP BY STEP GUIDE TO GAIN ROOT(SU) PERMISSIONS [rubyfish]
-note: from abstracts steps, guidelines can be emulate for other android devices.
+NOTE: from abstracts steps, guidelines can be emulate for other android devices.
 Personally it took me total 1w, i'll comment below what i've been encountered, wait for the unexpected. (EE:🤫).
 Be carefull, this procedure's gonna invalidate any material & non material warranty.
-
+ 
 ETA:
-
+ 
 - hardware components (it depends on personal skills)
 - abstract (1h from first wipe to magisk superuser confirm)
-
+ 
 PREP:
-
+ 
  - hardware: USB data cable
  - tools: android sdk platform-tool (adb, fastboot, RSA key finger-print dir: $user/.android/adbkey && $user/.android/adbkey.pub)
  - data resources: GOTO @end of this file
@@ -18,7 +18,7 @@ PREP:
 *********************************************************************************************************************************************************
 ********************************************************************************************************************************************************* 
 A) CABLE:
-
+ 
 - data cable actung for the direction of v++ & v--
 - enable adb debugging from watch developer options
 - when connected, start adb server on host (if necessary re-de-attach power usb if not detected)
@@ -34,7 +34,7 @@ adb reboot fastboot
 *********************************************************************************************************************************************************
  
 B) UNLOCK BOOTLOADER:
-
+ 
 bootloader menu GUI:
 .1 start (make default boot)
 .2 restart bootloader (restart bootloader)
@@ -42,20 +42,20 @@ bootloader menu GUI:
 .4 power off
 .5 boot to ffbm (Factory Fastboot Bootloader Mode/Forced Fallback Boot Mode/Factory Boot Mode)*
 .6 enter ship mode
-
+ 
 exec the following:
 - on host:
 ```
 fastboot oem unlock
 ```
 - after unlocking OEM, continue wiping data on watch to factory default
-- need to reconnect and to re-enable adb debug GOTO A.3
+- need to re init and to re-enable adb debug GOTO A.
  
 *********************************************************************************************************************************************************
  
 C) INSTALL RECOVERY: (utility ROM necessary to proceed, some function ex: file explorer, adb connection, .zip installer, partition mounter, etc.)
-(note: if unexpected encountered GOTO: C.1 and WearOS by One exclusively compiled ROM<->DEVICE)
-
+(NOTE: if unexpected encountered GOTO: C.1 and WearOS by One exclusively compiled ROM<->DEVICE)
+ 
 - reach bootloader holding phisical buttons: Power + Multi-function, than release the power after vibrate
   OR
 - reach bootloader from OS initialized
@@ -77,42 +77,61 @@ fastboot reboot recovery
 ```
 - if succeed GOTO D).
  
-.1 
-UNEXPECTED: Wear OS 3.5 [last OTA update]
-CAUSED: bootloader bootloop
-FIX: needed to downgrade firmware flashing all .img.
-
+C.1 
+ UNEXPECTED: Wear OS 3.5 [last OTA update]
+ CAUSED: bootloader bootloop
+ FIX: needed to downgrade firmware flashing all .img.
+ 
 -you need to downgrade Wear OS 3.5 (at the moment of this article is the last OTA update) installing fastboot OR recovery stock firmware.
-DIFFERENCE:
-recovery stock: can be restored from custom recovery
-fastboot stock: can be restored from fastboot/bootloader
-
+ DIFFERENCE:
+ recovery stock: can be restored from custom recovery
+ fastboot stock: can be restored from fastboot/bootloader
+ 
 here A direct resource:
-https://wear.onetm.ovh/en/OneOSWear/downloads/rubyfish/
-
+ https://wear.onetm.ovh/en/OneOSWear/downloads/rubyfish/
+ 
 NOTE: the developer team have made on the fastboot stock zip file the .bat and .sh precompiled scripts otherwise you can run the follow for each .img file:
 ```
 fastboot flash ####.img
 ```
-
+ 
 *********************************************************************************************************************************************************
  
 D) INSTALL ROM/CROM & other AddOn: (AddOn ex.: Gapps[google apk & service])
+ there are two methods to flash .zip:
+  
+D.1 directly from host by sideloading:
+- from recovery select install-sideloadADB:
+```
+ adb sideload ####.zip
+```
 
-CROM
-- adb sideload ###.zip / adb push ###.zip (CROM)
-- adb sideload ###.zip / adb push ###.zip (addon ultra gps) 
-MAGISK:
-- adb sideload ###.zip / adb push ###.zip (magisk)
-- adb push ###.zip (dm-verity install .zip from recovery)
-- system rebooted
+OR
+
+D.2 locally on device trough recovery, push the desired file to device trough:
+```
+adb push ###.zip
+```
+- than on recovery select install from zip
+ 
+- reboot after install:
+```
+adb reboot
+```
+(NOTE: it's not necessary to wipe cache and Dalvik for every flash but it's a good practice)
+
+NOW YOU HAVE A FRESH ROM INSTALLED, YOU CAN CONTINUE TO GAIN SPECIAL PERMISSION.
  
 *********************************************************************************************************************************************************
  
 E) MAGISK(SU)
+ 
+- we need to 
 
-
-
+- install magisk apk trough adb:
+```
+adb install magisk.apk
+```
 
 
 
