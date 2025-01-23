@@ -1,8 +1,7 @@
 # STEP BY STEP GUIDE TO GAIN ROOT(SU) PERMISSIONS [rubyfish]
 note: from abstracts steps, guidelines can be emulate for other android devices.
-Personally it took me total 1w, i'll comment below what i've been encountered, wait for the unexpected.
-Be carefull, this procedure's gonna invalidate any material & non material warranty 
-(EE:🤫).
+Personally it took me total 1w, i'll comment below what i've been encountered, wait for the unexpected.(EE:🤫).
+Be carefull, this procedure's gonna invalidate any material & non material warranty.
 
 ETA:
 - hardware components (it depends on personal skills)
