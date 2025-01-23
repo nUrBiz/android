@@ -22,8 +22,8 @@ A) CABLE:
 
 - data cable actung for the direction of v++ & v--
 
-<img src="https://github.com/user-attachments/assets/eb3cfe49-d437-4fad-a746-4d93ddc98046" width=50% height=50%>
-<img src="https://github.com/user-attachments/assets/fd07ab7e-0c88-4ed0-a32e-16fcbc934d40" width=50% height=50%>
+<img src="https://github.com/user-attachments/assets/eb3cfe49-d437-4fad-a746-4d93ddc98046" width=25% height=25%>
+<img src="https://github.com/user-attachments/assets/fd07ab7e-0c88-4ed0-a32e-16fcbc934d40" width=25% height=25%>
 
 - enable adb debugging from watch developer options
 - when connected, start adb server on host (if necessary re-de-attach power usb if not detected)
@@ -34,7 +34,7 @@ adb start-server
 
 - on watch allow always for the MAC address of the host for future handshake (compare for thriftiness the RSA finger-print)
 
-<img src="https://github.com/user-attachments/assets/dadbfacd-c3f9-4775-8a32-82fdfece5aa7" width=50% height=50%>
+<img src="https://github.com/user-attachments/assets/dadbfacd-c3f9-4775-8a32-82fdfece5aa7" width=25% height=25%>
 
 - reboot on bootloader
 
@@ -53,8 +53,8 @@ bootloader menu GUI:
 .5 boot to ffbm (Factory Fastboot Bootloader Mode/Forced Fallback Boot Mode/Factory Boot Mode)*
 .6 enter ship mode
 
-<img src="https://github.com/user-attachments/assets/fd5a8afe-34d5-48b7-9053-904f6e28061f" width=50% height=50%>
-<img src="https://github.com/user-attachments/assets/c9d387c8-630c-4f0e-9595-77fdfa1b5b35" width=50% height=50%>
+<img src="https://github.com/user-attachments/assets/fd5a8afe-34d5-48b7-9053-904f6e28061f" width=25% height=25%>
+<img src="https://github.com/user-attachments/assets/c9d387c8-630c-4f0e-9595-77fdfa1b5b35" width=25% height=25%>
 
 exec the following:
 
@@ -67,8 +67,8 @@ fastboot oem unlock
 - after unlocking OEM, continue wiping data on watch to factory default OR skip ROM installation GOTO E).
 - need to re init and to re-enable adb debug GOTO A.
 
-<img src="https://github.com/user-attachments/assets/4d7af7c4-0108-402f-a136-740f3da73d5e" width=50% height=50%>
-<img src="https://github.com/user-attachments/assets/00e17119-bd1c-4114-b523-0c0745771753" width=50% height=50%>
+<img src="https://github.com/user-attachments/assets/4d7af7c4-0108-402f-a136-740f3da73d5e" width=25% height=25%>
+<img src="https://github.com/user-attachments/assets/00e17119-bd1c-4114-b523-0c0745771753" width=25% height=25%>
 
 *********************************************************************************************************************************************************
  
@@ -196,8 +196,8 @@ fastboot flash boot magisk_patched_[random_strings].img
 
 F) FINALLY YOU'VE GAINED ROOT(SU) to your android device, enjoy 🥳.
  
-<img src="https://github.com/user-attachments/assets/444bf04d-d83d-4dab-a6ea-0dd3fb10cc5e" width=50% height=50%>
-<img src="https://github.com/user-attachments/assets/0cc1b56d-c263-4a8f-97ff-3bb712c35c76" width=50% height=50%>
+<img src="https://github.com/user-attachments/assets/444bf04d-d83d-4dab-a6ea-0dd3fb10cc5e" width=25% height=25%>
+<img src="https://github.com/user-attachments/assets/0cc1b56d-c263-4a8f-97ff-3bb712c35c76" width=25% height=25%>
 *********************************************************************************************************************************************************
 *********************************************************************************************************************************************************
 *********************************************************************************************************************************************************
