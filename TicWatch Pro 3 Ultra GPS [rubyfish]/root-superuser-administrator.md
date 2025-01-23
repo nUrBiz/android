@@ -53,35 +53,52 @@ fastboot oem unlock
  
 *********************************************************************************************************************************************************
  
-C) RECOVERY:
+C) INSTALL RECOVERY: (utility ROM necessary to proceed, some function ex: file explorer, adb connection, .zip installer, partition mounter, etc.)
+(note: if unexpected encountered GOTO: C.1 and WearOS by One exclusively compiled ROM<->DEVICE)
 
-(note: + UNEXPECTED encountered: Wear OS 3.5 [last OTA update], CAUSED: bootloader bootloop, FIX: needed to downgrade firmware flashing all .img, GOTO: C.1)
-
+- reach bootloader holding phisical buttons: Power + Multi-function, than release the power after vibrate
+  OR
+- reach bootloader from OS initialized
 ```
 adb reboot bootloader
 ```
+ 
+- secure to handshake host-device than flash recovery from bootloader/fastboot:
 ```
 fastboot flash recovery recovery.img
 ```
-(oneOS recovery)
-```
-fastboot reboot recovery
-```
+- flash vbmeta: (to make persistent recovery and next mod, necessary to continue)
 ```
 fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
 ```
-
-.1 - if you encounter bootloader bootloop, you need to downgrade wearOS 3.5 (at the moment of this article 16.01.2025) installing fastboot stock
-here A file resource: 
-https://wear.onetm.ovh/en/OneOSWear/downloads/rubyfish/
-NOTE: the team developer for the resource have made on the zip files the .bat and .sh precompiled automation
-.2 instead you can run the follow for each .img file:
-- fastboot flash ###.img
+- reboot in recovery:
+```
+fastboot reboot recovery
+```
+- if succeed GOTO D).
  
+.1 
+UNEXPECTED: Wear OS 3.5 [last OTA update]
+CAUSED: bootloader bootloop
+FIX: needed to downgrade firmware flashing all .img.
+
+-you need to downgrade Wear OS 3.5 (at the moment of this article is the last OTA update) installing fastboot OR recovery stock firmware.
+DIFFERENCE:
+recovery stock: can be restored from custom recovery
+fastboot stock: can be restored from fastboot/bootloader
+
+here A direct resource:
+https://wear.onetm.ovh/en/OneOSWear/downloads/rubyfish/
+
+NOTE: the developer team have made on the fastboot stock zip file the .bat and .sh precompiled scripts otherwise you can run the follow for each .img file:
+```
+fastboot flash ####.img
+```
+
 *********************************************************************************************************************************************************
  
-D) ROM/CROM 
-IF GIVE YOU ERROR TRY DOWNGRADE STOCK .img (see platform-tools dir files)(flash-all&images)
+D) INSTALL ROM/CROM & other AddOn: (AddOn ex.: Gapps[google apk & service])
+
 CROM
 - adb sideload ###.zip / adb push ###.zip (CROM)
 - adb sideload ###.zip / adb push ###.zip (addon ultra gps) 
