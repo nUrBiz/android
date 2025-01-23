@@ -20,6 +20,10 @@ PREP:
 A) CABLE:
  
 - data cable actung for the direction of v++ & v--
+ 
+![twp3 (13)](https://github.com/user-attachments/assets/eb3cfe49-d437-4fad-a746-4d93ddc98046)
+![twp3 (12)](https://github.com/user-attachments/assets/fd07ab7e-0c88-4ed0-a32e-16fcbc934d40)
+ 
 - enable adb debugging from watch developer options
 - when connected, start adb server on host (if necessary re-de-attach power usb if not detected)
 ```
@@ -76,11 +80,15 @@ fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
 fastboot reboot recovery
 ```
 - if succeed GOTO D).
+
  
+
 C.1 
  UNEXPECTED: Wear OS 3.5 [last OTA update]
  CAUSED: bootloader bootloop
  FIX: needed to downgrade firmware flashing all .img.
+ 
+https://github.com/user-attachments/assets/63e82190-e9f9-4cc1-bbc7-8e75ae1798fb
  
 -you need to downgrade Wear OS 3.5 (at the moment of this article is the last OTA update) installing fastboot OR recovery stock firmware.
  DIFFERENCE:
@@ -158,9 +166,6 @@ F) FINALLY YOU'VE GAINED ROOT(SU) to your android device, enjoy 🥳.
 *********************************************************************************************************************************************************
 *********************************************************************************************************************************************************
 *********************************************************************************************************************************************************
-![twp3 (13)](https://github.com/user-attachments/assets/eb3cfe49-d437-4fad-a746-4d93ddc98046)
-![twp3 (12)](https://github.com/user-attachments/assets/fd07ab7e-0c88-4ed0-a32e-16fcbc934d40)
-![twp3 (11)](https://github.com/user-attachments/assets/426125a6-f95d-4561-bbcf-d4871793aaaf)
 ![twp3 (10)](https://github.com/user-attachments/assets/0cc1b56d-c263-4a8f-97ff-3bb712c35c76)
 ![twp3 (9)](https://github.com/user-attachments/assets/444bf04d-d83d-4dab-a6ea-0dd3fb10cc5e)
 ![twp3 (8)](https://github.com/user-attachments/assets/0cba5f32-b22e-435f-bf32-fcbbd5a8724b)
@@ -169,10 +174,8 @@ F) FINALLY YOU'VE GAINED ROOT(SU) to your android device, enjoy 🥳.
 ![twp3 (5)](https://github.com/user-attachments/assets/a24ed931-d525-4783-abc2-eee1304fdf6f)
 ![twp3 (4)](https://github.com/user-attachments/assets/03a955b7-4362-4f69-ab71-73bed7791d7e)
 ![twp3 (3)](https://github.com/user-attachments/assets/9bc05ae5-76a9-4414-a85b-b6c740f240e4)
-![twp3 (2)](https://github.com/user-attachments/assets/37bd1d54-f4e3-41f4-96fb-b6351d505862)
 
 
-https://github.com/user-attachments/assets/63e82190-e9f9-4cc1-bbc7-8e75ae1798fb
 
 ![twp3 (1)](https://github.com/user-attachments/assets/dadbfacd-c3f9-4775-8a32-82fdfece5aa7)
 
