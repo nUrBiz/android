@@ -54,7 +54,7 @@ bootloader menu GUI:
 .6 enter ship mode
 
 <img src="https://github.com/user-attachments/assets/fd5a8afe-34d5-48b7-9053-904f6e28061f" width=25% height=25%>
-<img src="https://github.com/user-attachments/assets/c9d387c8-630c-4f0e-9595-77fdfa1b5b35" width=25% height=25%>
+<img src="https://github.com/user-attachments/assets/435015be-bd61-41c6-925a-6d2e1af57369" width=25% height=25%>
 
 exec the following:
 
@@ -252,6 +252,3 @@ https://xdaforums.com/t/rom-official-kali-nethunter-for-the-ticwatch-pro-3-wearo
  - Battery capacity 577mAh
  - Durability IP68, Pool Swim/MIL-STD-810G
    
-
-
-
