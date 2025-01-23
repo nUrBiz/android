@@ -101,7 +101,7 @@ https://github.com/user-attachments/assets/63e82190-e9f9-4cc1-bbc7-8e75ae1798fb
 
 
 
-links/resource:
+LINKS / RESOURCE:
 XDA WearOS: https://xdaforums.com/c/wear-os-development-and-hacking.2983/
 WearOS one: https://wear.onetm.ovh/en/
 Net Hunter: https://www.kali.org/docs/nethunter/installing-nethunter-on-the-ticwatch-pro-3/#supported-features
@@ -135,3 +135,26 @@ NOTES:
 + reboot
 + ok rooted 1608
 
+DEVICE SPEC:
+    Model TicWatch Pro 3 Ultra GPS
+    Dimensions (mm) 47 x 48 x 12.3
+    Weight 41g
+    Color Shadow Black
+    Watch case Stainless steel and high-strength nylon with fiberglass
+    Screen Corning Gorilla Anti-fingerprint Cover Glass
+    Watch strap Fluoro Rubber (interchangeable), 22mm
+    Operating System Wear OS by Google
+    Chipset Qualcomm® Snapdragon Wear™ 4100 Platform and Mobvoi dual processor system
+    Memory RAM: 1GB / ROM: 8GB
+    Display 1.4“ 454*454 326ppi Full Color Always On Display AMOLED + FSTN
+    Connectivity Bluetooth 5.0, Wi-Fi:802.11b/g/n
+    GNSS GPS+Beidou+Glonass+Galileo+QZSS
+    NFC Payments Google Pay
+    Speaker Yes
+    Mic Yes
+    Vibrator Yes
+    PPG Yes
+    Barometer Yes
+    Sensors Accelerometer, Gyro Sensor, HD PPG Heart Rate Sensor, SpO2 Sensor, Low Latency Off-Body Sensor, Barometer
+    Battery capacity 577mAh
+    Durability IP68, Pool Swim/MIL-STD-810G
