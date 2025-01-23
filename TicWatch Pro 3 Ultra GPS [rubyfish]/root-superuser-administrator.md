@@ -17,7 +17,8 @@ PREP:
 *********************************************************************************************************************************************************
 *********************************************************************************************************************************************************
 *********************************************************************************************************************************************************
-
+*********************************************************************************************************************************************************
+*********************************************************************************************************************************************************
 A) CABLE:
 Prepare a cable for data usage.
 
@@ -43,7 +44,6 @@ adb start-server
 adb reboot fastboot
 ```
 *********************************************************************************************************************************************************
-
 B) UNLOCK BOOTLOADER:
 bootloader menu GUI content
 1. start (make default boot)
@@ -69,9 +69,7 @@ fastboot oem unlock
 
 <img src="https://github.com/user-attachments/assets/4d7af7c4-0108-402f-a136-740f3da73d5e" width=25% height=25%>
 <img src="https://github.com/user-attachments/assets/00e17119-bd1c-4114-b523-0c0745771753" width=25% height=25%>
-
 *********************************************************************************************************************************************************
- 
 C) INSTALL RECOVERY:
 Utility ROM necessary to proceed, some function ex: file explorer, adb connection, .zip installer, partition mounter, etc.
 (NOTE: if unexpected encountered GOTO: C.1 and WearOS by One exclusively compiled ROM<->DEVICE)
@@ -123,9 +121,7 @@ you need to downgrade Wear OS 3.5 (at the moment of this article is the last OTA
 ```
 fastboot flash ####.img
 ```
-
 *********************************************************************************************************************************************************
-
 D) INSTALL ROM/CROM & other AddOn: (AddOn ex.: Gapps[google apk & service])
 
 there are two methods to flash .zip:
@@ -156,11 +152,8 @@ adb reboot
 ```
 
 (NOTE: it's not necessary to wipe cache and Dalvik for every flash but it's a good practice)
-
 NOW YOU HAVE A FRESH ROM INSTALLED, YOU CAN CONTINUE TO GAIN SPECIAL PERMISSION.
-
 *********************************************************************************************************************************************************
-
 E) MAGISK(SU):
 (NOTE: next is one of the various method to gain SU, it's differ for devices)
 
@@ -190,9 +183,7 @@ fastboot flash boot magisk_patched_[random_strings].img
 ```
 
 -than reboot
-
 *********************************************************************************************************************************************************
-
 F) FINALLY YOU'VE GAINED ROOT(SU) to your android device, enjoy 🥳.
  
 <img src="https://github.com/user-attachments/assets/444bf04d-d83d-4dab-a6ea-0dd3fb10cc5e" width=25% height=25%>
