@@ -52,9 +52,9 @@ bootloader menu GUI:
 .6 enter ship mode
 
 - 
-![twp3 (4)](https://github.com/user-attachments/assets/03a955b7-4362-4f69-ab71-73bed7791d7e)
+![twp3 (4)](https://github.com/user-attachments/assets/fd5a8afe-34d5-48b7-9053-904f6e28061f)
 - 
-![twp3 (5)](https://github.com/user-attachments/assets/a24ed931-d525-4783-abc2-eee1304fdf6f)
+![twp3 (5)](https://github.com/user-attachments/assets/c9d387c8-630c-4f0e-9595-77fdfa1b5b35)
 - 
  
 exec the following:
@@ -67,7 +67,7 @@ fastboot oem unlock
 - 
 ![twp3 (7)](https://github.com/user-attachments/assets/4d7af7c4-0108-402f-a136-740f3da73d5e)
 - 
-![twp3 (8)](https://github.com/user-attachments/assets/0cba5f32-b22e-435f-bf32-fcbbd5a8724b)
+![twp3 (8)](https://github.com/user-attachments/assets/00e17119-bd1c-4114-b523-0c0745771753)
 - 
 *********************************************************************************************************************************************************
  
@@ -234,3 +234,6 @@ Monk987 (New member, bug reporter), feivel5 (Member), yesimxev (Senior Member, r
  - Battery capacity 577mAh
  - Durability IP68, Pool Swim/MIL-STD-810G
    
+
+
+
