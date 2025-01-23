@@ -56,10 +56,6 @@ bootloader menu GUI:
 - 
 ![twp3 (5)](https://github.com/user-attachments/assets/a24ed931-d525-4783-abc2-eee1304fdf6f)
 - 
-![twp3 (7)](https://github.com/user-attachments/assets/4d7af7c4-0108-402f-a136-740f3da73d5e)
--
-![twp3 (8)](https://github.com/user-attachments/assets/0cba5f32-b22e-435f-bf32-fcbbd5a8724b)
-- 
  
 exec the following:
 - on host:
@@ -68,7 +64,11 @@ fastboot oem unlock
 ```
 - after unlocking OEM, continue wiping data on watch to factory default OR skip ROM installation GOTO E).
 - need to re init and to re-enable adb debug GOTO A.
- 
+- 
+![twp3 (7)](https://github.com/user-attachments/assets/4d7af7c4-0108-402f-a136-740f3da73d5e)
+- 
+![twp3 (8)](https://github.com/user-attachments/assets/0cba5f32-b22e-435f-bf32-fcbbd5a8724b)
+- 
 *********************************************************************************************************************************************************
  
 C) INSTALL RECOVERY: (utility ROM necessary to proceed, some function ex: file explorer, adb connection, .zip installer, partition mounter, etc.)
