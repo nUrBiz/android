@@ -1,3 +1,6 @@
+# STEP BY STEP GUIDE TO GAIN ROOT(SU) PERMISSIONS
+
+
 NOTES:
 rubyfish ticwatch pro 3 ultra gps (days: 2.5 + 2 + 2)
 +14012025 (start)
