@@ -12,16 +12,17 @@ PREP:
  - hardware: USB data cable
  - tools: android sdk platform-tool
  - unexpected
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-CABLE:
+*********************************************************************************************************************************************************
+*********************************************************************************************************************************************************
+ 
+A) CABLE:
 - data cable actung for the direction
 - connected, start adb server //**if necessary re-de-attach power usb
 - enable adbDebugging from developer options
 - adb reboot fastboot
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+  
+*********************************************************************************************************************************************************
+ 
 UNLOCK BOOTLOADER:
 bootloader menu:
 
@@ -35,8 +36,9 @@ bootloader menu:
 - fastboot oem unlock
 - after unlocking OEM, default wipe data
 - need to reconnect to re-enable adb debug (with the current ROM)
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+ 
+*********************************************************************************************************************************************************
+ 
 RECOVERY: (+ causes: wearOS 3.5, in my case downloaded stock fastboot 220703.001, it will restore recovery stock)
 - adb reboot bootloader
 
@@ -57,8 +59,9 @@ Monk987 (New member, bug reporter), feivel5 (Member), yesimxev (Senior Member, r
 - fastboot flash recovery recovery.img (oneOS recovery)
 - fastboot reboot recovery
 - fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+ 
+*********************************************************************************************************************************************************
+ 
 IF GIVE YOU ERROR TRY DOWNGRADE STOCK .img (see platform-tools dir files)(flash-all&images)
 CROM
 - adb sideload ###.zip / adb push ###.zip (CROM)
@@ -67,11 +70,9 @@ MAGISK:
 - adb sideload ###.zip / adb push ###.zip (magisk)
 - adb push ###.zip (dm-verity install .zip from recovery)
 - system rebooted
-
-
-
-
+ 
 *********************************************************************************************************************************************************
+ 
 3. Finalise Magisk app to finish the rooting process
 
 
