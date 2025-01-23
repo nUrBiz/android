@@ -11,7 +11,8 @@ ETA:
 PREP:
 
  - hardware: USB data cable
- - tools: android sdk platform-tool (adb, fastboot)
+ - tools: android sdk platform-tool (adb, fastboot, RSA key finger-print dir: $/.android/adbkey && $/.android/adbkey.pub)
+ - data resources: see @end of this file
  - unexpected
 *********************************************************************************************************************************************************
 *********************************************************************************************************************************************************
@@ -24,7 +25,7 @@ A) CABLE:
 ```
 adb start-server
 ```
-- on watch allow always for the MAC address of the host for future handshake
+- on watch allow always for the MAC address of the host for future handshake (compare for thriftiness the RSA finger-print)
 - reboot on bootloader
 ```
 adb reboot fastboot
