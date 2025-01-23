@@ -118,7 +118,7 @@ you need to downgrade Wear OS 3.5 (at the moment of this article is the last OTA
 - here A direct resource:
  https://wear.onetm.ovh/en/OneOSWear/downloads/rubyfish/
 
-NOTE: the developer team have made on the fastboot stock zip file the .bat and .sh precompiled scripts otherwise you can run the follow for each .img file:
+- the developer team have made on the fastboot stock zip file the .bat and .sh precompiled scripts otherwise you can run the follow for each .img file:
 
 ```
 fastboot flash ####.img
@@ -162,7 +162,7 @@ NOW YOU HAVE A FRESH ROM INSTALLED, YOU CAN CONTINUE TO GAIN SPECIAL PERMISSION.
 *********************************************************************************************************************************************************
 
 E) MAGISK(SU):
-NOTE: next is one of the various method to gain SU, it's differ for devices.
+(NOTE: next is one of the various method to gain SU, it's differ for devices)
 
 - we need first to access the boot.img of the installed ROM, usually it's inside the ROM .zip file, otherwise with a different direction of evolution we can extract it directly from the device trough the next:
 
@@ -212,7 +212,10 @@ F) FINALLY YOU'VE GAINED ROOT(SU) to your android device, enjoy 🥳.
  CREDITS:
 -this guide is made thanks to the following:
 https://xdaforums.com/t/rom-official-kali-nethunter-for-the-ticwatch-pro-3-wearos.4456797/page-8
-- Monk987 (New member, bug reporter), feivel5 (Member), yesimxev (Senior Member, resourcer), steso90 (Senior Member, first bug resolver)
+- Monk987 (New member, bug reporter)
+- feivel5 (Member)
+- yesimxev (Senior Member, resourcer)
+- steso90 (Senior Member, first bug resolver)
 
  DEVICE SPEC:
  - Model TicWatch Pro 3 Ultra GPS
