@@ -111,6 +111,7 @@ fastboot reboot recovery
 ```
 
 - if succeed GOTO D).
+ 
 https://github.com/user-attachments/assets/63e82190-e9f9-4cc1-bbc7-8e75ae1798fb
 
 C.1 UNEXPECTED: Wear OS 3.5 [last OTA update]; CAUSED: bootloader bootloop; FIX: needed to downgrade firmware flashing all .img.
