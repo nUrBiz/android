@@ -20,16 +20,20 @@ PREP:
 A) CABLE:
  
 - data cable actung for the direction of v++ & v--
- 
+- 
 ![twp3 (13)](https://github.com/user-attachments/assets/eb3cfe49-d437-4fad-a746-4d93ddc98046)
+- 
 ![twp3 (12)](https://github.com/user-attachments/assets/fd07ab7e-0c88-4ed0-a32e-16fcbc934d40)
- 
+- 
 - enable adb debugging from watch developer options
 - when connected, start adb server on host (if necessary re-de-attach power usb if not detected)
 ```
 adb start-server
 ```
 - on watch allow always for the MAC address of the host for future handshake (compare for thriftiness the RSA finger-print)
+- 
+![twp3 (1)](https://github.com/user-attachments/assets/dadbfacd-c3f9-4775-8a32-82fdfece5aa7)
+- 
 - reboot on bootloader
 ```
 adb reboot fastboot
@@ -160,14 +164,17 @@ fastboot flash boot magisk_patched_[random_strings].img
 *********************************************************************************************************************************************************
 
 F) FINALLY YOU'VE GAINED ROOT(SU) to your android device, enjoy 🥳.
-
-*********************************************************************************************************************************************************
-*********************************************************************************************************************************************************
-*********************************************************************************************************************************************************
-*********************************************************************************************************************************************************
-*********************************************************************************************************************************************************
-![twp3 (10)](https://github.com/user-attachments/assets/0cc1b56d-c263-4a8f-97ff-3bb712c35c76)
+- 
 ![twp3 (9)](https://github.com/user-attachments/assets/444bf04d-d83d-4dab-a6ea-0dd3fb10cc5e)
+- 
+![twp3 (10)](https://github.com/user-attachments/assets/0cc1b56d-c263-4a8f-97ff-3bb712c35c76)
+ 
+*********************************************************************************************************************************************************
+*********************************************************************************************************************************************************
+*********************************************************************************************************************************************************
+*********************************************************************************************************************************************************
+*********************************************************************************************************************************************************
+
 ![twp3 (8)](https://github.com/user-attachments/assets/0cba5f32-b22e-435f-bf32-fcbbd5a8724b)
 ![twp3 (7)](https://github.com/user-attachments/assets/4d7af7c4-0108-402f-a136-740f3da73d5e)
 ![twp3 (6)](https://github.com/user-attachments/assets/50ad2891-3019-4f29-868f-2c0a174bee2f)
@@ -177,7 +184,7 @@ F) FINALLY YOU'VE GAINED ROOT(SU) to your android device, enjoy 🥳.
 
 
 
-![twp3 (1)](https://github.com/user-attachments/assets/dadbfacd-c3f9-4775-8a32-82fdfece5aa7)
+
 
 
 
