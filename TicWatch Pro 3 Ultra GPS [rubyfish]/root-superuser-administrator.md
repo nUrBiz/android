@@ -1,40 +1,18 @@
-# STEP BY STEP GUIDE TO GAIN ROOT(SU) PERMISSIONS
+# STEP BY STEP GUIDE TO GAIN ROOT(SU) PERMISSIONS [rubyfish]
+note: from abstracts steps, guidelines can be emulate for other android devices.
+Personally it took me total 1w, i'll comment below what i've been encountered, wait for the unexpected.
+Be carefull, this procedure's gonna invalidate any material & non material warranty 
+(EE:🤫).
 
+ETA:
+- hardware components (it depends on personal skills)
+- abstract (1h from first wipe to magisk superuser confirm)
 
-NOTES:
-rubyfish ticwatch pro 3 ultra gps (days: 2.5 + 2 + 2)
-+14012025 (start)
-+16012025 (wearOS bug fix)
-+18012025.1559-21012025.03.20(bootloop, stock fastboot)
-+21012025.0758(flash rom fastboot stock as needed for bricked bootloop than restored factory from recovery stock)
+PREP:
+ - hardware: USB data cable
+ - tools: android sdk platform-tool
+ + unexpected
 
-+0800 flashed recovery
-+0802 vbmeta
-
-+1212 wiped all for a clean install
-
-+1217 sideload crom pushed (2023)
-+1219 addon (oem)
-**wiped cache and dalvik every sideload
-
-+ reboot
-+ init (24 colored round to complete!!)
-
-+ re-enable adb debug
-+ adb install magisk.apk    NOT .zip because no ramdisk
-+ 1554 from selecting file img magisk app select boot.img pushed from crom.zip
-+ 1554 patch boot.img
-+ pull patched .img from sdcard/Download/magisk_patched_[random_strings].img to pc
-+ fastboot flash boot magisk_patched_[random_strings].img
-+ disable dm verity (tryed without with success for me)
-+ reboot
-+ ok rooted 1608
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-crom installing step by step:
- - preparation
- - tools
- + case study (wearOS 3.5)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 CABLE:
 - data cable actung for the direction
@@ -120,3 +98,33 @@ links/resource:
 XDA WearOS: https://xdaforums.com/c/wear-os-development-and-hacking.2983/
 WearOS one: https://wear.onetm.ovh/en/
 Net Hunter: https://www.kali.org/docs/nethunter/installing-nethunter-on-the-ticwatch-pro-3/#supported-features
+
+NOTES:
+(days: 2.5 + 2 + 2)
++14012025 (start)
++16012025 (wearOS bug fix)
++18012025.1559-21012025.03.20(bootloop, stock fastboot)
++21012025.0758(flash rom fastboot stock as needed for bricked bootloop than restored factory from recovery stock)
+
++0800 flashed recovery
++0802 vbmeta
+
++1212 wiped all for a clean install
+
++1217 sideload crom pushed (2023)
++1219 addon (oem)
+**wiped cache and dalvik every sideload
+
++ reboot
++ init (24 colored round to complete!!)
+
++ re-enable adb debug
++ adb install magisk.apk    NOT .zip because no ramdisk
++ 1554 from selecting file img magisk app select boot.img pushed from crom.zip
++ 1554 patch boot.img
++ pull patched .img from sdcard/Download/magisk_patched_[random_strings].img to pc
++ fastboot flash boot magisk_patched_[random_strings].img
++ disable dm verity (tryed without with success for me)
++ reboot
++ ok rooted 1608
+
