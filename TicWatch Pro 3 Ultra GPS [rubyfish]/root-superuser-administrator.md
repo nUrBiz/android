@@ -12,7 +12,7 @@ PREP:
 
  - hardware: USB data cable
  - tools: android sdk platform-tool (adb, fastboot, RSA key finger-print dir: $user/.android/adbkey && $user/.android/adbkey.pub)
- - data resources: see @end of this file
+ - data resources: GOTO @end of this file
  - unexpected
 *********************************************************************************************************************************************************
 *********************************************************************************************************************************************************
@@ -48,31 +48,35 @@ exec the following:
 ```
 fastboot oem unlock
 ```
-- after unlocking OEM, continue wiping data on watch
-- need to reconnect and to re-enable adb debug go to A.3
+- after unlocking OEM, continue wiping data on watch to factory default
+- need to reconnect and to re-enable adb debug GOTO A.3
  
 *********************************************************************************************************************************************************
  
-C) RECOVERY: (+ causes: wearOS 3.5, in my case downloaded stock fastboot 220703.001, it will restore recovery stock)
-- adb reboot bootloader
+C) RECOVERY:
+
+(note: + UNEXPECTED encountered: Wear OS 3.5 [last OTA update], CAUSED: bootloader bootloop, FIX: needed to downgrade firmware flashing all .img, GOTO: C.1)
+
+```
+adb reboot bootloader
+```
+```
+fastboot flash recovery recovery.img
+```
+(oneOS recovery)
+```
+fastboot reboot recovery
+```
+```
+fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
+```
 
 .1 - if you encounter bootloader bootloop, you need to downgrade wearOS 3.5 (at the moment of this article 16.01.2025) installing fastboot stock
 here A file resource: 
-
 https://wear.onetm.ovh/en/OneOSWear/downloads/rubyfish/
 NOTE: the team developer for the resource have made on the zip files the .bat and .sh precompiled automation
-
 .2 instead you can run the follow for each .img file:
 - fastboot flash ###.img
-
-this guide is made thanks to the following resource/case studies:
-https://xdaforums.com/t/rom-official-kali-nethunter-for-the-ticwatch-pro-3-wearos.4456797/page-8
-from post Mar 9, 2024, to post Apr 24, 2024.
-Monk987 (New member, bug reporter), feivel5 (Member), yesimxev (Senior Member, resourcer), steso90 (Senior Member, first bug resolver)
-
-- fastboot flash recovery recovery.img (oneOS recovery)
-- fastboot reboot recovery
-- fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
  
 *********************************************************************************************************************************************************
  
@@ -117,9 +121,16 @@ https://github.com/user-attachments/assets/63e82190-e9f9-4cc1-bbc7-8e75ae1798fb
 
 
 LINKS / RESOURCE:
+List of Wear OS devices: https://en.wikipedia.org/wiki/List_of_Wear_OS_devices
 XDA WearOS: https://xdaforums.com/c/wear-os-development-and-hacking.2983/
 WearOS one: https://wear.onetm.ovh/en/
 Net Hunter: https://www.kali.org/docs/nethunter/installing-nethunter-on-the-ticwatch-pro-3/#supported-features
+
+CREDITS:
+this guide is made thanks to the following resource/case studies:
+https://xdaforums.com/t/rom-official-kali-nethunter-for-the-ticwatch-pro-3-wearos.4456797/page-8
+from post Mar 9, 2024, to post Apr 24, 2024.
+Monk987 (New member, bug reporter), feivel5 (Member), yesimxev (Senior Member, resourcer), steso90 (Senior Member, first bug resolver)
 
 NOTES:
 (days: 2.5 + 2 + 2)
