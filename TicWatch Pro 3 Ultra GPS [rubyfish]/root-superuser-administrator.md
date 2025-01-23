@@ -198,17 +198,16 @@ F) FINALLY YOU'VE GAINED ROOT(SU) to your android device, enjoy 🥳.
 
 
  LINKS / RESOURCE:
-List of Wear OS devices: https://en.wikipedia.org/wiki/List_of_Wear_OS_devices
-XDA WearOS: https://xdaforums.com/c/wear-os-development-and-hacking.2983/
-Magisk: https://github.com/topjohnwu/Magisk
-WearOS one: https://wear.onetm.ovh/en/
-Net Hunter: https://www.kali.org/docs/nethunter/installing-nethunter-on-the-ticwatch-pro-3/#supported-features
+- List of Wear OS devices: https://en.wikipedia.org/wiki/List_of_Wear_OS_devices
+- XDA WearOS: https://xdaforums.com/c/wear-os-development-and-hacking.2983/
+- Magisk: https://github.com/topjohnwu/Magisk
+- WearOS one: https://wear.onetm.ovh/en/
+- Net Hunter: https://www.kali.org/docs/nethunter/installing-nethunter-on-the-ticwatch-pro-3/#supported-features
 
  CREDITS:
-this guide is made thanks to the following:
- https://xdaforums.com/t/rom-official-kali-nethunter-for-the-ticwatch-pro-3-wearos.4456797/page-8
-from post Mar 9, 2024, to post Apr 24, 2024.
-Monk987 (New member, bug reporter), feivel5 (Member), yesimxev (Senior Member, resourcer), steso90 (Senior Member, first bug resolver)
+-this guide is made thanks to the following:
+https://xdaforums.com/t/rom-official-kali-nethunter-for-the-ticwatch-pro-3-wearos.4456797/page-8
+- Monk987 (New member, bug reporter), feivel5 (Member), yesimxev (Senior Member, resourcer), steso90 (Senior Member, first bug resolver)
 
  DEVICE SPEC:
  - Model TicWatch Pro 3 Ultra GPS
