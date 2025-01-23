@@ -4,10 +4,12 @@ Personally it took me total 1w, i'll comment below what i've been encountered, w
 Be carefull, this procedure's gonna invalidate any material & non material warranty.
 
 ETA:
+
 - hardware components (it depends on personal skills)
 - abstract (1h from first wipe to magisk superuser confirm)
 
 PREP:
+
  - hardware: USB data cable
  - tools: android sdk platform-tool (adb, fastboot)
  - unexpected
@@ -15,16 +17,24 @@ PREP:
 *********************************************************************************************************************************************************
 ********************************************************************************************************************************************************* 
 A) CABLE:
-- data cable actung for the direction
-- connected, start adb server //**if necessary re-de-attach power usb
-- enable adbDebugging from developer options
-- adb reboot fastboot
-  
+
+- data cable actung for the direction of v++ & v--
+- enable adb debugging from watch developer options
+- when connected, start adb server on host (if necessary re-de-attach power usb if not detected)
+```
+adb start-server
+```
+- on watch allow always for the MAC address of the host for future handshake
+- reboot on bootloader
+```
+adb reboot fastboot
+```
+ 
 *********************************************************************************************************************************************************
  
 B) UNLOCK BOOTLOADER:
-bootloader menu:
 
+bootloader menu GUI:
 .1 start (make default boot)
 .2 restart bootloader (restart bootloader)
 .3 recovery mode (at the moment the factory recovery mode)
@@ -32,9 +42,13 @@ bootloader menu:
 .5 boot to ffbm (Factory Fastboot Bootloader Mode/Forced Fallback Boot Mode/Factory Boot Mode)*
 .6 enter ship mode
 
-- fastboot oem unlock
-- after unlocking OEM, default wipe data
-- need to reconnect to re-enable adb debug (with the current ROM)
+exec the following:
+- on host:
+```
+fastboot oem unlock
+```
+- after unlocking OEM, continue wiping data on watch
+- need to reconnect and to re-enable adb debug go to A.3
  
 *********************************************************************************************************************************************************
  
