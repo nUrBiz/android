@@ -50,6 +50,16 @@ bootloader menu GUI:
 .4 power off
 .5 boot to ffbm (Factory Fastboot Bootloader Mode/Forced Fallback Boot Mode/Factory Boot Mode)*
 .6 enter ship mode
+
+- 
+![twp3 (4)](https://github.com/user-attachments/assets/03a955b7-4362-4f69-ab71-73bed7791d7e)
+- 
+![twp3 (5)](https://github.com/user-attachments/assets/a24ed931-d525-4783-abc2-eee1304fdf6f)
+- 
+![twp3 (7)](https://github.com/user-attachments/assets/4d7af7c4-0108-402f-a136-740f3da73d5e)
+-
+![twp3 (8)](https://github.com/user-attachments/assets/0cba5f32-b22e-435f-bf32-fcbbd5a8724b)
+- 
  
 exec the following:
 - on host:
@@ -175,12 +185,10 @@ F) FINALLY YOU'VE GAINED ROOT(SU) to your android device, enjoy 🥳.
 *********************************************************************************************************************************************************
 *********************************************************************************************************************************************************
 
-![twp3 (8)](https://github.com/user-attachments/assets/0cba5f32-b22e-435f-bf32-fcbbd5a8724b)
-![twp3 (7)](https://github.com/user-attachments/assets/4d7af7c4-0108-402f-a136-740f3da73d5e)
-![twp3 (6)](https://github.com/user-attachments/assets/50ad2891-3019-4f29-868f-2c0a174bee2f)
-![twp3 (5)](https://github.com/user-attachments/assets/a24ed931-d525-4783-abc2-eee1304fdf6f)
-![twp3 (4)](https://github.com/user-attachments/assets/03a955b7-4362-4f69-ab71-73bed7791d7e)
-![twp3 (3)](https://github.com/user-attachments/assets/9bc05ae5-76a9-4414-a85b-b6c740f240e4)
+
+
+
+
 
 
 
