@@ -11,7 +11,7 @@ ETA:
 PREP:
 
  - hardware: USB data cable
- - tools: android sdk platform-tool (adb, fastboot, RSA key finger-print dir: $/.android/adbkey && $/.android/adbkey.pub)
+ - tools: android sdk platform-tool (adb, fastboot, RSA key finger-print dir: $user/.android/adbkey && $user/.android/adbkey.pub)
  - data resources: see @end of this file
  - unexpected
 *********************************************************************************************************************************************************
