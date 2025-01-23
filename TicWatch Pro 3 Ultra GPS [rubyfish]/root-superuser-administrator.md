@@ -109,12 +109,7 @@ fastboot reboot recovery
 - if succeed GOTO D).
 https://github.com/user-attachments/assets/63e82190-e9f9-4cc1-bbc7-8e75ae1798fb
 
-C.1 
-
- UNEXPECTED: Wear OS 3.5 [last OTA update]
- CAUSED: bootloader bootloop
- FIX: needed to downgrade firmware flashing all .img.
- 
+C.1 UNEXPECTED: Wear OS 3.5 [last OTA update]; CAUSED: bootloader bootloop; FIX: needed to downgrade firmware flashing all .img.
 you need to downgrade Wear OS 3.5 (at the moment of this article is the last OTA update) installing fastboot OR recovery stock firmware.
  DIFFERENCE:
  - recovery stock: can be restored from custom recovery
