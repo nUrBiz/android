@@ -19,6 +19,7 @@ PREP:
 *********************************************************************************************************************************************************
 
 A) CABLE:
+Prepare a cable for data usage.
 
 - data cable actung for the direction of v++ & v--
 
@@ -44,14 +45,13 @@ adb reboot fastboot
 *********************************************************************************************************************************************************
 
 B) UNLOCK BOOTLOADER:
-
-bootloader menu GUI:
-.1 start (make default boot)
-.2 restart bootloader (restart bootloader)
-.3 recovery mode (at the moment the factory recovery mode)
-.4 power off
-.5 boot to ffbm (Factory Fastboot Bootloader Mode/Forced Fallback Boot Mode/Factory Boot Mode)*
-.6 enter ship mode
+bootloader menu GUI content
+1. start (make default boot)
+2. restart bootloader (restart bootloader)
+3. recovery mode (at the moment the factory recovery mode)
+4. power off
+5. boot to ffbm (Factory Fastboot Bootloader Mode/Forced Fallback Boot Mode/Factory Boot Mode)*
+6. enter ship mode
 
 <img src="https://github.com/user-attachments/assets/fd5a8afe-34d5-48b7-9053-904f6e28061f" width=25% height=25%>
 <img src="https://github.com/user-attachments/assets/435015be-bd61-41c6-925a-6d2e1af57369" width=25% height=25%>
@@ -72,7 +72,8 @@ fastboot oem unlock
 
 *********************************************************************************************************************************************************
  
-C) INSTALL RECOVERY: (utility ROM necessary to proceed, some function ex: file explorer, adb connection, .zip installer, partition mounter, etc.)
+C) INSTALL RECOVERY:
+Utility ROM necessary to proceed, some function ex: file explorer, adb connection, .zip installer, partition mounter, etc.
 (NOTE: if unexpected encountered GOTO: C.1 and WearOS by One exclusively compiled ROM<->DEVICE)
 
 - reach bootloader holding phisical buttons: Power + Multi-function, than release the power after vibrate
@@ -131,7 +132,8 @@ fastboot flash ####.img
 *********************************************************************************************************************************************************
 
 D) INSTALL ROM/CROM & other AddOn: (AddOn ex.: Gapps[google apk & service])
- there are two methods to flash .zip:
+
+there are two methods to flash .zip:
 
 D.1 directly from host by sideloading:
 
@@ -164,7 +166,7 @@ NOW YOU HAVE A FRESH ROM INSTALLED, YOU CAN CONTINUE TO GAIN SPECIAL PERMISSION.
 
 *********************************************************************************************************************************************************
 
-E) MAGISK(SU)
+E) MAGISK(SU):
 NOTE: next is one of the various method to gain SU, it's differ for devices.
 
 - we need first to access the boot.img of the installed ROM, usually it's inside the ROM .zip file, otherwise with a different direction of evolution we can extract it directly from the device trough the next:
@@ -205,19 +207,6 @@ F) FINALLY YOU'VE GAINED ROOT(SU) to your android device, enjoy 🥳.
 *********************************************************************************************************************************************************
 *********************************************************************************************************************************************************
 *********************************************************************************************************************************************************
-
-
-
-
-
-
-
-
-
-
-
-
-
  LINKS / RESOURCE:
 - List of Wear OS devices: https://en.wikipedia.org/wiki/List_of_Wear_OS_devices
 - XDA WearOS: https://xdaforums.com/c/wear-os-development-and-hacking.2983/
