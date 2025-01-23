@@ -48,7 +48,7 @@ exec the following:
 ```
 fastboot oem unlock
 ```
-- after unlocking OEM, continue wiping data on watch to factory default
+- after unlocking OEM, continue wiping data on watch to factory default OR skip ROM installation GOTO E).
 - need to re init and to re-enable adb debug GOTO A.
  
 *********************************************************************************************************************************************************
@@ -125,16 +125,39 @@ NOW YOU HAVE A FRESH ROM INSTALLED, YOU CAN CONTINUE TO GAIN SPECIAL PERMISSION.
 *********************************************************************************************************************************************************
  
 E) MAGISK(SU)
- 
-- we need to 
+NOTE: next is one of the various method to gain SU, it's differ for devices.
+
+- we need first to access the boot.img of the installed ROM, usually it's inside the ROM .zip file, otherwise with a different direction of evolution we can extract it directly from the device trough the next:
+```
+adb shell
+```
+```
+dd if=/dev/block/bootdevice/by-name/boot of=/sdcard/boot.img
+```
+it will extract it to dir /sdcard/
 
 - install magisk apk trough adb:
 ```
 adb install magisk.apk
 ```
 
+- from magisk APP move forward patching the boot.img extracted, locate the patched boot and move it to the host.
+- reboot to fastboot
+- flash the patched .img trough:
+```
+fastboot flash boot magisk_patched_[random_strings].img
+```
+-than reboot
 
+*********************************************************************************************************************************************************
 
+F) FINALLY YOU'VE GAINED ROOT(SU) to your android device, enjoy 🥳.
+
+*********************************************************************************************************************************************************
+*********************************************************************************************************************************************************
+*********************************************************************************************************************************************************
+*********************************************************************************************************************************************************
+*********************************************************************************************************************************************************
 ![twp3 (13)](https://github.com/user-attachments/assets/eb3cfe49-d437-4fad-a746-4d93ddc98046)
 ![twp3 (12)](https://github.com/user-attachments/assets/fd07ab7e-0c88-4ed0-a32e-16fcbc934d40)
 ![twp3 (11)](https://github.com/user-attachments/assets/426125a6-f95d-4561-bbcf-d4871793aaaf)
@@ -156,67 +179,40 @@ https://github.com/user-attachments/assets/63e82190-e9f9-4cc1-bbc7-8e75ae1798fb
 
 
 
-LINKS / RESOURCE:
+ LINKS / RESOURCE:
 List of Wear OS devices: https://en.wikipedia.org/wiki/List_of_Wear_OS_devices
 XDA WearOS: https://xdaforums.com/c/wear-os-development-and-hacking.2983/
+Magisk: https://github.com/topjohnwu/Magisk
 WearOS one: https://wear.onetm.ovh/en/
 Net Hunter: https://www.kali.org/docs/nethunter/installing-nethunter-on-the-ticwatch-pro-3/#supported-features
 
-CREDITS:
-this guide is made thanks to the following resource/case studies:
-https://xdaforums.com/t/rom-official-kali-nethunter-for-the-ticwatch-pro-3-wearos.4456797/page-8
+ CREDITS:
+this guide is made thanks to the following:
+ https://xdaforums.com/t/rom-official-kali-nethunter-for-the-ticwatch-pro-3-wearos.4456797/page-8
 from post Mar 9, 2024, to post Apr 24, 2024.
 Monk987 (New member, bug reporter), feivel5 (Member), yesimxev (Senior Member, resourcer), steso90 (Senior Member, first bug resolver)
 
-NOTES:
-(days: 2.5 + 2 + 2)
-+14012025 (start)
-+16012025 (wearOS bug fix)
-+18012025.1559-21012025.03.20(bootloop, stock fastboot)
-+21012025.0758(flash rom fastboot stock as needed for bricked bootloop than restored factory from recovery stock)
-
-+0800 flashed recovery
-+0802 vbmeta
-
-+1212 wiped all for a clean install
-
-+1217 sideload crom pushed (2023)
-+1219 addon (oem)
-**wiped cache and dalvik every sideload
-
-+ reboot
-+ init (24 colored round to complete!!)
-
-+ re-enable adb debug
-+ adb install magisk.apk    NOT .zip because no ramdisk
-+ 1554 from selecting file img magisk app select boot.img pushed from crom.zip
-+ 1554 patch boot.img
-+ pull patched .img from sdcard/Download/magisk_patched_[random_strings].img to pc
-+ fastboot flash boot magisk_patched_[random_strings].img
-+ disable dm verity (tryed without with success for me)
-+ reboot
-+ ok rooted 1608
-
-DEVICE SPEC:
-    Model TicWatch Pro 3 Ultra GPS
-    Dimensions (mm) 47 x 48 x 12.3
-    Weight 41g
-    Color Shadow Black
-    Watch case Stainless steel and high-strength nylon with fiberglass
-    Screen Corning Gorilla Anti-fingerprint Cover Glass
-    Watch strap Fluoro Rubber (interchangeable), 22mm
-    Operating System Wear OS by Google
-    Chipset Qualcomm® Snapdragon Wear™ 4100 Platform and Mobvoi dual processor system
-    Memory RAM: 1GB / ROM: 8GB
-    Display 1.4“ 454*454 326ppi Full Color Always On Display AMOLED + FSTN
-    Connectivity Bluetooth 5.0, Wi-Fi:802.11b/g/n
-    GNSS GPS+Beidou+Glonass+Galileo+QZSS
-    NFC Payments Google Pay
-    Speaker Yes
-    Mic Yes
-    Vibrator Yes
-    PPG Yes
-    Barometer Yes
-    Sensors Accelerometer, Gyro Sensor, HD PPG Heart Rate Sensor, SpO2 Sensor, Low Latency Off-Body Sensor, Barometer
-    Battery capacity 577mAh
-    Durability IP68, Pool Swim/MIL-STD-810G
+ DEVICE SPEC:
+ - Model TicWatch Pro 3 Ultra GPS
+ - Dimensions (mm) 47 x 48 x 12.3
+ - Weight 41g
+ - Color Shadow Black
+ - Watch case Stainless steel and high-strength nylon with fiberglass
+ - Screen Corning Gorilla Anti-fingerprint Cover Glass
+ - Watch strap Fluoro Rubber (interchangeable), 22mm
+ - Operating System Wear OS by Google
+ - Chipset Qualcomm® Snapdragon Wear™ 4100 Platform and Mobvoi dual processor system
+ - Memory RAM: 1GB / ROM: 8GB
+ - Display 1.4“ 454*454 326ppi Full Color Always On Display AMOLED + FSTN
+ - Connectivity Bluetooth 5.0, Wi-Fi:802.11b/g/n
+ - GNSS GPS+Beidou+Glonass+Galileo+QZSS
+ - NFC Payments Google Pay
+ - Speaker Yes
+ - Mic Yes
+ - Vibrator Yes
+ - PPG Yes
+ - Barometer Yes
+ - Sensors Accelerometer, Gyro Sensor, HD PPG Heart Rate Sensor, SpO2 Sensor, Low Latency Off-Body Sensor, Barometer
+ - Battery capacity 577mAh
+ - Durability IP68, Pool Swim/MIL-STD-810G
+   
