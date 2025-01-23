@@ -22,7 +22,6 @@ A) CABLE:
 - data cable actung for the direction of v++ & v--
 
 <img src="https://github.com/user-attachments/assets/eb3cfe49-d437-4fad-a746-4d93ddc98046" width=50% height=50%>
-![twp3 (13)](https://github.com/user-attachments/assets/eb3cfe49-d437-4fad-a746-4d93ddc98046)
 - 
 ![twp3 (12)](https://github.com/user-attachments/assets/fd07ab7e-0c88-4ed0-a32e-16fcbc934d40)
 - 
