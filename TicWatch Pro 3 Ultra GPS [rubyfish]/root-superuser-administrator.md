@@ -1,9 +1,3 @@
-dir: C:\Users\nicco\AppData\Local\Android\Sdk\platform-tools
-
-wearOS one: https://wear.onetm.ovh/en/
-
-NH: https://www.kali.org/docs/nethunter/installing-nethunter-on-the-ticwatch-pro-3/#supported-features
-
 NOTES:
 rubyfish ticwatch pro 3 ultra gps (days: 2.5 + 2 + 2)
 +14012025 (start)
@@ -94,30 +88,6 @@ MAGISK:
 
 ********************************************************************************************************************************************************************************3. Finalise Magisk app to finish the rooting process
 
-    Enable ADB again
-    Finalise Magisk installation with app install adb install Magisk-v24.3.apk
-    Launch Magisk Manager
-    You may want to disable auto-update, set grant access in auto response, and disable toast notifications for easier navigation in the future
-
-4. Install NetHunter
-
-    Reboot to recovery
-    Select Install -> ADB Sideload
-    Flash NetHunter image with adb sideload
-    Reboot
-    Start NetHunter app & chroot
-    Reboot
-
-5. Set NetHunter watch face
-
-    Install Facer onto your phone and watch from Play Store
-    Search for NetHunter
-    Select & Sync
-    Set density so NetHunter app menu buttons will be reachable on OneOS 
-    - adb shell wm density 300
-
-Enjoy Kali NetHunter on the TicWatch Pro 3
-
 
 
 
@@ -139,3 +109,11 @@ Enjoy Kali NetHunter on the TicWatch Pro 3
 https://github.com/user-attachments/assets/63e82190-e9f9-4cc1-bbc7-8e75ae1798fb
 
 ![twp3 (1)](https://github.com/user-attachments/assets/dadbfacd-c3f9-4775-8a32-82fdfece5aa7)
+
+
+
+
+links/resource:
+XDA WearOS: https://xdaforums.com/c/wear-os-development-and-hacking.2983/
+WearOS one: https://wear.onetm.ovh/en/
+Net Hunter: https://www.kali.org/docs/nethunter/installing-nethunter-on-the-ticwatch-pro-3/#supported-features
