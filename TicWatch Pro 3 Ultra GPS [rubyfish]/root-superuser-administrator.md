@@ -23,7 +23,7 @@ A) CABLE:
   
 *********************************************************************************************************************************************************
  
-UNLOCK BOOTLOADER:
+B) UNLOCK BOOTLOADER:
 bootloader menu:
 
 .1 start (make default boot)
@@ -39,7 +39,7 @@ bootloader menu:
  
 *********************************************************************************************************************************************************
  
-RECOVERY: (+ causes: wearOS 3.5, in my case downloaded stock fastboot 220703.001, it will restore recovery stock)
+C) RECOVERY: (+ causes: wearOS 3.5, in my case downloaded stock fastboot 220703.001, it will restore recovery stock)
 - adb reboot bootloader
 
 .1 - if you encounter bootloader bootloop, you need to downgrade wearOS 3.5 (at the moment of this article 16.01.2025) installing fastboot stock
@@ -62,6 +62,7 @@ Monk987 (New member, bug reporter), feivel5 (Member), yesimxev (Senior Member, r
  
 *********************************************************************************************************************************************************
  
+D) ROM/CROM 
 IF GIVE YOU ERROR TRY DOWNGRADE STOCK .img (see platform-tools dir files)(flash-all&images)
 CROM
 - adb sideload ###.zip / adb push ###.zip (CROM)
@@ -73,7 +74,8 @@ MAGISK:
  
 *********************************************************************************************************************************************************
  
-3. Finalise Magisk app to finish the rooting process
+E) MAGISK(SU)
+
 
 
 
