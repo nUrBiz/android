@@ -29,6 +29,17 @@ Prepare a cable for data usage.
 <img src="https://github.com/user-attachments/assets/eb3cfe49-d437-4fad-a746-4d93ddc98046" width=25% height=25%>
 <img src="https://github.com/user-attachments/assets/fd07ab7e-0c88-4ed0-a32e-16fcbc934d40" width=25% height=25%>
 
+UPDATE! CONF CABLE!
+i've found this adaptor (comfortable use // w/o 3d printer) on AMAZON:
+
+https://www.amazon.it/dp/B07DDG7XCY?ref=ppx_yo2ov_dt_b_fed_asin_title
+
+<img src="https://github.com/user-attachments/assets/5e076e70-57bf-4753-9926-7e45c640e7a3" width=25% height=25%>
+
+- just inverted the pin for unidentified driver:
+  
+<img src="https://github.com/user-attachments/assets/c58c56f4-73fb-42c8-b2f5-61b1e916c530" width=25% height=25%>
+
 - enable adb debugging from watch developer options
 - when connected, start adb server on host (if necessary re-de-attach power usb if not detected)
 
