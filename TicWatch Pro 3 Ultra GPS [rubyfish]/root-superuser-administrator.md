@@ -214,6 +214,16 @@ fastboot flash boot magisk_patched_[random_strings].img
 
 -than reboot
 
+E.1) for tic watch pro 3 ultra gps
+Set density so app menu buttons will be reachable on OneOS: (for comfortable use)
+
+```
+adb shell wm density 300
+```
+SETTINGS:
+- disable auto-update.
+- set grant access in auto response.
+- disable toast notifications for easier navigation in the future.
 *********************************************************************************************************************************************************
 
 F) FINALLY YOU'VE GAINED ROOT(SU) to your android device, enjoy 🥳.
