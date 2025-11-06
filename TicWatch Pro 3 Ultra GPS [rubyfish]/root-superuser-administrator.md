@@ -145,9 +145,7 @@ For this DEVICE particularly in order:
 - OneOS
 - Mobvoi Apps package
 - If you have an Ultra, Ultra addon package
-Make a copy of your Magisk apk file to Magisk-v24.3.zip
-- Flash Magisk with adb sideload Magisk-v24.3.zip
-
+- Flash Magisk
 
 D) INSTALL ROM/CROM & other AddOn: (AddOn ex.: Gapps[google apk & service])
 
