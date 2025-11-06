@@ -145,7 +145,8 @@ For this DEVICE particularly in order:
 - OneOS
 - Mobvoi Apps package
 - If you have an Ultra, Ultra addon package
-- Copy and flash DM-Verity_ForceEncrypt Disabler with adb push Disable-DM-Verity_ForceEncrypt.zip /sdcard/ and install via recovery
+Make a copy of your Magisk apk file to Magisk-v24.3.zip
+- Flash Magisk with adb sideload Magisk-v24.3.zip
 
 
 D) INSTALL ROM/CROM & other AddOn: (AddOn ex.: Gapps[google apk & service])
