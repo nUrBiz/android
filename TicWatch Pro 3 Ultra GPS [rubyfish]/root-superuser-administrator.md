@@ -54,7 +54,7 @@ adb start-server
 - reboot on bootloader
 
 ```
-adb reboot fastboot
+adb reboot bootloader
 ```
 
 *********************************************************************************************************************************************************
@@ -141,6 +141,14 @@ fastboot flash ####.img
 ```
 
 *********************************************************************************************************************************************************
+For this DEVICE particularly in order:
+- OneOS
+- Mobvoi Apps package
+- If you have an Ultra, Ultra addon package
+Make a copy of your Magisk apk file to Magisk-v24.3.zip
+- Flash Magisk Magisk-v24.3.zip
+- Copy and flash DM-Verity_ForceEncrypt Disabler with adb push Disable-DM-Verity_ForceEncrypt.zip /sdcard/ and install via TWRP
+
 
 D) INSTALL ROM/CROM & other AddOn: (AddOn ex.: Gapps[google apk & service])
 
