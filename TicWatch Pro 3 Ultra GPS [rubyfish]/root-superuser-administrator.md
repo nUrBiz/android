@@ -112,7 +112,7 @@ fastboot flash recovery recovery.img
 - flash vbmeta: (to make persistent recovery and next mod, necessary to continue)
 
 ```
-fastboot flash --disable-verity --disable-verification vbmeta vbmeta.img
+fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
 ```
 
 - reboot in recovery:
