@@ -145,7 +145,7 @@ For this DEVICE particularly in order:
 - OneOS
 - Mobvoi Apps package
 - If you have an Ultra, Ultra addon package
-- flash pushed Disable-DM-Verity_ForceEncrypt.zip
+- flash pushed Disable-DM-Verity_ForceEncrypt.zip (for CROM, kernel to persist)
 - Flash Magisk
 
 D) INSTALL ROM/CROM & other AddOn: (AddOn ex.: Gapps[google apk & service])
