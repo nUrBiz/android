@@ -144,9 +144,8 @@ fastboot flash ####.img
 For this DEVICE particularly in order:
 - OneOS
 - Mobvoi Apps package
-- If you have an Ultra, Ultra addon package
-- flash pushed Disable-DM-Verity_ForceEncrypt.zip (for CROM, kernel to persist)
-- Flash Magisk
+- Ultra addon package
+- Flash Magisk ZIP
 
 D) INSTALL ROM/CROM & other AddOn: (AddOn ex.: Gapps[google apk & service])
 
@@ -225,7 +224,7 @@ SETTINGS:
 *********************************************************************************************************************************************************
 
 F) FINALLY YOU'VE GAINED ROOT(SU) to your android device, enjoy 🥳.
- 
+
 <img src="https://github.com/user-attachments/assets/444bf04d-d83d-4dab-a6ea-0dd3fb10cc5e" width=25% height=25%>
 <img src="https://github.com/user-attachments/assets/0cc1b56d-c263-4a8f-97ff-3bb712c35c76" width=25% height=25%>
 
